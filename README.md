@@ -1,6 +1,6 @@
-# charlotte-cookies
+# Troop 76853 Cookie Sales
 
-> Webapp for tracking sales of girl scout cookies
+> Webapp for intake and tracking sales of girl scout cookies
 
 ## Build Setup
 
