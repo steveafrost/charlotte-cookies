@@ -1,17 +1,17 @@
 <template>
-  <form class="form">
+  <form class="form" name="purchase" netlify>
     <div class="form__field">
       <label class="form__field__label" for="full-name">
-        Full Name
+        Your Name
       </label>
-      <input id="full-name" class="form__field__input form__field__input--text" type="text">
+      <input id="full-name" class="form__field__input form__field__input--text" type="text" name="customer-name">
     </div>
     <div class="form__field">
       <label class="form__field__label" for="scout-name">
         Scout Name
       </label>
       <div class="form__field__input form__field__input--select">
-        <select id="scout-name">
+        <select id="scout-name" name="scout-name">
           <option>Addison Frank</option>
           <option>Adelynn Stram</option>
           <option>Charlotte Goodrich</option>
