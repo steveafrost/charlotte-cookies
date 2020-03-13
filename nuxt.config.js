@@ -49,12 +49,13 @@ export default {
   ],
   axios: {
     headers: {
-      common: {
+      get: {
         /* eslint-disable */
-        'Authorization': 'boooogie',
+        'Authorization': process.env.SQUARE_API_KEY,
         'Square-Version': '2020-02-26'
       }
-    }
+    },
+    proxy: true
   },
   /*
   ** Build configuration

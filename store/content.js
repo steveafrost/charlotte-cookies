@@ -12,8 +12,8 @@ export const mutations = {
 }
 
 export const actions = {
-  async getProducts ({ commit, $axios }) {
-    const { data } = await $axios.$get(
+  async getProducts ({ commit }) {
+    const { data } = await this.$axios.get(
       'https://connect.squareup.com/v2/catalog/list'
     )
 
