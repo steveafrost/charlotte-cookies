@@ -29,6 +29,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 15px;
 }
 
 .title {
@@ -36,7 +37,7 @@ export default {
   display: block;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 100px;
+  font-size: 65px;
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.1;
@@ -46,10 +47,10 @@ export default {
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 24px;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 .links {
