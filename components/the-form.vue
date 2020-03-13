@@ -104,23 +104,25 @@ export default {}
 }
 
 .form__field__input--select select {
+  -webkit-appearance: none;
+  background-image: none;
+  background: transparent;
   border: none;
   box-shadow: none;
-  background: transparent;
-  background-image: none;
-  -webkit-appearance: none;
+  font-size: 16px;
+  height: 50px;
   padding: 10px 15px;
   width: 100%;
-  height: 50px;
 }
 
 .form__button {
-  display: inline-block;
   border-radius: 5px;
   border: 1px solid #00AE58;
   color: #00AE58;
-  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   padding: 10px 30px;
+  text-decoration: none;
   width: 100%;
 }
 

@@ -30,8 +30,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: [],
   /*
   ** Nuxt.js dev-modules
   */
@@ -39,17 +38,24 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/stylelint-module'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/axios',
     '@nuxtjs/dotenv'
   ],
+  axios: {
+    headers: {
+      common: {
+        /* eslint-disable */
+        'Authorization': 'boooogie',
+        'Square-Version': '2020-02-26'
+      }
+    }
+  },
   /*
   ** Build configuration
   */

@@ -13,11 +13,25 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex'
 import TheForm from '@/components/the-form'
 
 export default {
   components: {
     'the-form': TheForm
+  },
+  computed: {
+    ...mapState({
+      products: state => state.products
+    })
+  },
+  mounted () {
+    this.getProducts()
+  },
+  methods: {
+    ...mapActions({
+      getProducts: 'content/getProducts'
+    })
   }
 }
 </script>
