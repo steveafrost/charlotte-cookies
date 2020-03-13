@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        charlotte-cookies
+        troop-76853
       </h1>
       <h2 class="subtitle">
         Webapp for tracking sales of girl scout cookies
