@@ -1,66 +1,47 @@
 <template>
   <div class="container">
     <div>
-      <logo />
       <h1 class="title">
-        troop-76853
+        Girl Scout Cookies
       </h1>
       <h2 class="subtitle">
-        Webapp for tracking sales of girl scout cookies
+        Purchase cookies from your favorite Troop 76853 Girl Scout
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <the-form />
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import TheForm from '@/components/the-form'
 
 export default {
   components: {
-    Logo
+    'the-form': TheForm
   }
 }
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
 .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .title {
+  color: #00AE58;
+  display: block;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  font-weight: 300;
   letter-spacing: 1px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .subtitle {
